@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1190px;
+    margin: 0 auto;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 50px;
+    background-color: rgb(49, 49, 124);
+}
+header{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    padding-top: 15px;
+    justify-content: space-around;
+}
+header .logo h3{
+    margin-top: 20px;
+}
+header .logo span{
+    color: goldenrod;
+}
+header .menu nav ul{
+    display: flex;
+    list-style-type: none;
+}
+header .menu nav ul a{
+    color: white;
+    margin-top: 30px;
+    display: block;
+    margin-right: 30px;
+    text-decoration: none;
+    position: relative;
+}
+header .menu nav ul a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: goldenrod;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+  }
+  
+  header .menu nav ul a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+header .menu button{
+    margin-top: 30px;
+    border-color: white;
+    padding: 3px;
+    border-radius: 18px;
+    font-size: medium;
+    color: gold;
+    background-color: rgb(49, 49, 124);
+}
+header .menu button:hover{
+    color: black;
+    transition: .6s;
+background-color: white;
+}
+.banner{
+    width: 830px;
+    margin: 0 auto;
+    color: white;
+    padding-bottom: 30px;
+}
+.banner .banner-inner{
+    display: flex;
+}
+.banner-inner img{
+    width: 400px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.banner h2 {
+    font-size: 44px;
+    font-weight: 800;
+    margin-left: -9px;
+}
+.banner span{
+    color: goldenrod;
+}
+.banner p{
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+.banner form input{
+    padding: 10px;
+    border-radius: 18px;
+    border: none;
+    width: 200px;
+    margin-bottom: 18px;
+}
+.banner .btn{
+    color: white;
+    font-size: 15px;
+    border: none;
+    font-weight: 600;
+    border-radius: 18px;
+    padding: 10px 22px;
+    background-color: rgb(182, 140, 34);
+}
+.banner .btn:hover{
+    color: black;
+    transition: .3s;
+    background-color: goldenrod;
+}
